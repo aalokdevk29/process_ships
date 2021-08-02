@@ -1,6 +1,6 @@
 class Api::V1::ProcessingShipsController < ApplicationController
   def new
-    sleep 20
+    sleep(rand(20..60))
     data = {
       status: :processed
     }
